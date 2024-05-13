@@ -29,7 +29,7 @@ def test_product_search_using_contains(setup):
     amazon_search_box = driver.find_element(By.ID, 'twotabsearchtextbox')
     assert amazon_search_box.is_displayed(), 'Failed: Amazon Search Box is not Present'
     amazon_search_box.click()
-    amazon_search_box.send_keys("mobiles")
+    amazon_search_box.send_keys("iphone")
 
     # Click on the search button
     amazon_search_btn = driver.find_element(By.ID, "nav-search-submit-button")
